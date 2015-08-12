@@ -23,6 +23,6 @@ Steal xfinity-comcast subscriber credentials.
 
     7. Enable the Pineapple's wireless access point.
 
-    8. Wait... Check in on the auth.log file / tail it / configure alarms to monitor this file.
+    8. Wait, then check in on the auth.log file / tail it / configure alarms to monitor this file.
 
     9. Profit.
